@@ -1,0 +1,113 @@
+body,
+html {
+    height: 100%
+}
+
+body{
+    background-color: #0c0c0c;
+}
+
+#particles-js canvas {
+    display: block;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+#header{
+    color:#ffffff;
+    text-align: left;
+    padding-top: 200px;
+    margin-left: 15px;
+    font-family: 'Tourney', cursive;
+}
+
+#secondary,#event{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#event{
+    background-image: linear-gradient(to right, #4776e6, #8e54e9);
+    color: white;
+}
+
+h1{
+    font-size: 4.5rem;
+}
+
+hr{
+    border:0;
+    border-bottom: 2px solid white ;
+    width: 800px;
+}
+
+ul{
+    width: 200px;
+}
+
+input{
+    width: 200px;
+}
+
+#logo{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 20px;
+    font: linear-gradient(to right, #4776e6, #8e54e9);
+}
+
+.dropdown-menu{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.dropdown-item{
+    color:white;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+    --color-red: #ec1840;
+    --color-purple: #7a18ec;
+    --color-white: #fff;
+    --color-black-1: #111;
+    --color-black-2: #222;
+    --color-black-3: #444;
+    --speed-normal: 0.5s;
+    --speed-fast: 0.8s;
+    --color-custom: #00fffc;
+}
+#fancyButton {
+    position: relative;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--color-white);
+    transition: var(--speed-normal);
+    border: 1px solid var(--color-custom);
+}
+#fancyButton:hover {
+    border: 1px solid transparent;
+    background: var(--color-custom) url(https://i.postimg.cc/fWS910v1/pixel.png);
+    transition-delay: 0.3s;
+    background-size: 180px;
+    animation: animate var(--speed-normal) steps(8) forwards;
+}
+@keyframes animate {
+    0% {
+        background-position-y: 0;
+   }
+    100% {
+        background-position-y: -480px;
+   }
+}
